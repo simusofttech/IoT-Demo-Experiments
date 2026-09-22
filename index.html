@@ -1,1 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IoT Demo Experiments</title>
+
+<style>
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f4f7fb;
+    color:#222;
+    line-height:1.6;
+}
+
+/* HEADER */
+.header{
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:42px 20px;
+}
+
+.header h1{
+    margin:0 0 8px;
+    font-size:34px;
+}
+
+.header p{
+    margin:0;
+    font-size:17px;
+}
+
+/* MAIN */
+.container{
+    width:92%;
+    max-width:1100px;
+    margin:42px auto;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:34px;
+}
+
+.section-heading h2{
+    margin:0 0 8px;
+    color:#1e3a8a;
+    font-size:30px;
+}
+
+.section-heading p{
+    margin:0;
+    color:#64748b;
+}
+
+/* CATEGORY GRID */
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(3, minmax(0,1fr));
+    gap:24px;
+}
+
+/* CARD */
+.category-card{
+    background:#fff;
+    border:1px solid #e2e8f0;
+    border-radius:15px;
+    padding:30px 24px;
+    text-align:center;
+    box-shadow:0 5px 16px rgba(0,0,0,.07);
+    transition:transform .25s ease,box-shadow .25s ease;
+    min-height:230px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.category-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 26px rgba(0,0,0,.12);
+}
+
+.category-card h3{
+    margin:0 0 12px;
+    color:#1e3a8a;
+    font-size:22px;
+}
+
+.category-card p{
+    margin:0 0 22px;
+    color:#64748b;
+    font-size:15px;
+}
+
+.btn{
+    display:inline-block;
+    align-self:center;
+    padding:11px 20px;
+    background:#2563eb;
+    color:#fff;
+    text-decoration:none;
+    border-radius:7px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+/* FOOTER */
+footer{
+    margin-top:50px;
+    background:#0f172a;
+    color:#cbd5e1;
+    text-align:center;
+    padding:24px 20px;
+    font-size:14px;
+}
+
+footer strong{
+    color:white;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .category-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:600px){
+    .header h1{
+        font-size:28px;
+    }
+
+    .container{
+        width:94%;
+    }
+
+    .category-grid{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+    <h1>IoT Experiments</h1>
+    <p>Explore practical experiments using Arduino, ESP32 and Raspberry Pi.</p>
+</header>
+
+<main class="container">
+
+    <section class="section-heading">
+        <h2>Experiment Categories</h2>
+        <p>Select a platform to view the available IoT experiments.</p>
+    </section>
+
+    <section class="category-grid">
+
+        <div class="category-card">
+            <h3>Arduino Experiments</h3>
+            <p>
+                Explore practical Arduino experiments using sensors,
+                LEDs, motors and other electronic components.
+            </p>
+
+            <a class="btn"
+               href="Arduino%20Experiments/">
+                View Experiments
+            </a>
+        </div>
+
+        <div class="category-card">
+            <h3>ESP32 Experiments</h3>
+            <p>
+                Explore Wi-Fi and IoT experiments using ESP32
+                development boards and connected devices.
+            </p>
+
+            <a class="btn"
+               href="ESP32%20Experiments/">
+                View Experiments
+            </a>
+        </div>
+
+        <div class="category-card">
+            <h3>R-Pi Experiments</h3>
+            <p>
+                Explore Raspberry Pi experiments involving GPIO,
+                sensors, automation and IoT applications.
+            </p>
+
+            <a class="btn"
+               href="R-Pi%20Experiments/">
+                View Experiments
+            </a>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <strong>IoT Experiments</strong><br>
+    Arduino • ESP32 • Raspberry Pi
+</footer>
+
+</body>
+</html>
 
